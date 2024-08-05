@@ -1,0 +1,102 @@
+/* Reset some default styles */
+body, h1, h2, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.scrolled {
+    background: #000;
+}
+
+.scrolled nav ul li a {
+    color: #ff6600;
+}
+
+nav ul li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.home {
+    background: #f4f4f4;
+}
+
+.about {
+    background: #fff;
+}
+
+.services {
+    background: #f4f4f4;
+}
+
+.portfolio {
+    background: #fff;
+}
+
+.contact {
+    background: #f4f4f4;
+}
+
+main {
+    padding-top: 100px; /* Space for fixed header */
+}
